@@ -1,4 +1,6 @@
+import static junit.framework.TestCase.assertTrue;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -23,4 +25,15 @@ public class FizzBuzzTest {
       assertEquals("le nombre suit la séquence", i, table[i-1]);
     }
   }
+
+  @Test
+  public void estUnMultipeDe(){
+    assertTrue("3 est un multiple de 3", fB.estMultiple(3,3));
+    assertFalse("5 est un multiple de 3", fB.estMultiple(5,3));
+    assertTrue("5 est un multiple de 5", fB.estMultiple(5,5));
+    assertFalse("6 est un multiple de 3", fB.estMultiple(3,5));
+    assertTrue("15 est un multiple de 3", fB.estMultiple(15,3));
+    assertTrue("15 est un multiple de 5", fB.estMultiple(15,5));
+  }
+
 }
