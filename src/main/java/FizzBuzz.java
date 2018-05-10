@@ -14,7 +14,11 @@ public class FizzBuzz {
 
 
   public static boolean estMultiple(int numero, int diviseur){
-    return true;//TODO implémenter méthode
+    if (numero%diviseur==0){
+      return true;
+    }else{
+      return false;
+    }
   }
 
   public static String fizzBuzz(int numero){
