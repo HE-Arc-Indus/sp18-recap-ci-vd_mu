@@ -36,4 +36,11 @@ public class FizzBuzzTest {
     assertTrue("15 est un multiple de 5", fB.estMultiple(15,5));
   }
 
+  @Test
+  public void fizzBuzz(){
+    assertEquals("fizzBuzz de 1 retourne 1", fB.fizzBuzz(1), "1");
+    assertEquals("fizzBuzz de 3 retourne Fizz", fB.fizzBuzz(3), "Fizz");
+    assertEquals("fizzBuzz de 5 retourne Buzz", fB.fizzBuzz(5), "Buzz");
+    assertEquals("fizzBuzz de 15 retourne FizzBuzz", fB.fizzBuzz(15), "FizzBuzz");
+  }
 }
