@@ -6,7 +6,10 @@ public class FizzBuzz {
 
   public int[] cheatSheet(){
     int[] maListe = new int[100];
-    return maListe;//TODO implémenter méthode
+    for(int i=1;i<=100;i++){
+      maListe[i-1] = i;
+    }
+    return maListe;
   }
 
 
