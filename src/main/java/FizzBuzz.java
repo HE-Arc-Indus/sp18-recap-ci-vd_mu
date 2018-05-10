@@ -22,6 +22,14 @@ public class FizzBuzz {
   }
 
   public static String fizzBuzz(int numero){
-    return null;//TODO implémenter méthode
+    if (estMultiple(numero, 3) && estMultiple(numero, 5)) {
+      return "FizzBuzz";
+    } else if (estMultiple(numero, 3)) {
+      return "Fizz";
+    } else if (estMultiple(numero, 5)) {
+      return "Buzz";
+    } else {
+      return Integer.toString(numero);
+    }
   }
 }
