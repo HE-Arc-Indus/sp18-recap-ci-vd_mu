@@ -48,5 +48,7 @@ public class FizzBuzzTest {
   @Test
   public void contient() {
     Assert.assertEquals("Fizz", FizzBuzz.fizzBuzz( -391));
+    Assert.assertEquals("Buzz", FizzBuzz.fizzBuzz( -95));
+
   }
 }
