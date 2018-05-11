@@ -42,5 +42,5 @@ public class FizzBuzzTest {
     assertEquals("fizzBuzz de 3 retourne Fizz", fB.fizzBuzz(3), "Fizz");
     assertEquals("fizzBuzz de 5 retourne Buzz", fB.fizzBuzz(5), "Buzz");
     assertEquals("fizzBuzz de 15 retourne FizzBuzz", fB.fizzBuzz(15), "FizzBuzz");
-  }
+    }
 }
