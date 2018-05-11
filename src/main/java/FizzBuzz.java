@@ -26,6 +26,8 @@ public class FizzBuzz {
       return "FizzBuzz";
     } else if (estMultiple(numero, 3)) {
       return "Fizz";
+    }  else if (Integer.toString(numero).indexOf(3) != 0){
+        return "Fizz";
     } else if (estMultiple(numero, 5)) {
       return "Buzz";
     } else {
