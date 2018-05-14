@@ -2,6 +2,7 @@ import static junit.framework.TestCase.assertTrue;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -43,4 +44,11 @@ public class FizzBuzzTest {
     assertEquals("fizzBuzz de 5 retourne Buzz", fB.fizzBuzz(5), "Buzz");
     assertEquals("fizzBuzz de 15 retourne FizzBuzz", fB.fizzBuzz(15), "FizzBuzz");
     }
+
+  @Test
+  public void contient() {
+    Assert.assertEquals("-391 contiens s retourne Fizz", fB.fizzBuzz( -391), "Fizz");
+    Assert.assertEquals("-95 contiens 5 retourne Buzz", fB.fizzBuzz( -95),"Buzz");
+
+  }
 }

@@ -26,6 +26,10 @@ public class FizzBuzz {
       return "FizzBuzz";
     } else if (estMultiple(numero, 3)) {
       return "Fizz";
+    }  else if (Integer.toString(numero).contains("3")){
+        return "Fizz";
+    }  else if (Integer.toString(numero).contains("5")){
+      return "Buzz";
     } else if (estMultiple(numero, 5)) {
       return "Buzz";
     } else {
